@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>模块管理</title>
+    <link rel="stylesheet" href="../CSS/jquery.treeview.css" />
+    <script src="../JS/jquery.js" type="text/javascript"></script>
+    <script src="../JS/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../JS/jquery.treeview.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    if (top.location == self.location) top.location.href = "/";
+    $(function () {
+
+        $.ajax({
+            type: "GET",
+            cache: false,
+            url: "../../Script/data.module.js",
+            data: { r: Math.random() },
+            dataType: "jsonp",
+            jsonpCallback: "JDSITE_CALLBACK",
+            success: function (data) {
+                $("#treeList").append("<ul>" + treeData(data) + "</ul>");
+                $("#browser").treeview({
+                    persist: "cookie",
+                    collapsed: true,
+                    unique: false
+                });
+
+                var o_a = $("#browser").find("a");
+                o_a.click(function () {
+                    o_a.removeClass("linkfocus");
+                    $(this).addClass("linkfocus");
+                })
+            }
+        });
+    });
+
+    function treeData(data) {
+        var arr = [];
+        $.each(data, function (key) {
+
+            if (typeof data[key].sub === "object") {
+                arr.push("<li><span class=\"folder\"><a href=\"ModuleSet.aspx?level=" + data[key].data4 + "&parentId=" + data[key].data0 + "\" title=\"" + data[key].data2 + "\"  target=\"ColumnRight\">" + data[key].data2 + "</a></span>");
+                arr.push("<ul>");
+                arr.push(treeData(data[key].sub));
+                arr.push("</ul>");
+            }
+            else {
+                arr.push("<li><span class=\"file\"><a href=\"ModuleSet.aspx?level=" + data[key].data4 + "&parentId=" + data[key].data0 + "\" title=\"" + data[key].data2 + "\"  target=\"ColumnRight\">" + data[key].data2 + "</a></span>");
+            }
+            arr.push("</li>");
+        })
+        return arr.join('');
+    }
+    </script>
+</head>
+<body>
+    <div style="height:10px">&nbsp;</div>
+    <div id="treeView" class="treeView">
+        <ul id="browser" class="filetree">
+            <li id="treeList" class="open"><span class="folder" style="padding-left:20px;">模块分类</span></li>
+        </ul>
+    </div>
+</body>
+</html>

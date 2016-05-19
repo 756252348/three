@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html{ width:100%; height:100%;background-image:url(../Images/LoginBg.jpg); background-repeat:repeat-x; background-position:center 0; background-color:#dcecf9;}
+body { font-size:12px; }
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+
+
+.LoginBox{ width:940px; height:auto;  margin:0 auto; padding-top:60px;}
+.CopyRight{ width:100%; text-align:center; background-color:#8e959b; color:#FFF; height:30px; line-height:30px;}
+.CopyRight a{ color:#FFF; text-decoration:none;}
+.Logo{ float:left; width:295px; height:91px;}
+.TopLinks{ float:right; height:91px; line-height:91px;}
+.TopLinks a{ color:#333; text-decoration:none;}
+.SysInfoShow{ float:left;}
+.LoginBoxForm{ background-image:url(../Images/LoginBoxBg.png); background-repeat:no-repeat; width:290px; height:328px; float:right;}
+.LoginBoxForm dl{ margin:15px;}
+.LoginBoxForm dt{ color:#000; font-size:16px; background-image:url(../Images/Dot01.png); background-repeat:no-repeat; background-position:5px center; text-indent:3em; border-bottom:1px #92c1df solid; height:35px; line-height:35px; font-weight:bold;}
+.LoginBoxForm dd{ border-top:1px #fff solid; padding-top:20px; }
+.LoginBoxForm dd li{ padding:15px 0;}
+.VerifyCodeImg{ width:60px; height:24px; cursor:pointer; }
+.LoginTipWord{ float:left; width:70px; text-align:right; font-size:14px; color:#0060a5; font-weight:bold;}
+.LoginCtrl{ float:left; text-align:left; text-indent:5px;}
+.LoginCtrl input{ border:1px #75a6c4 solid; height:24px; line-height:24px; padding:0px 10px; width:130px; }
+
+#txtUserName,#txtUserPwd{ width:150px;}
+#txtVerifyCode{ width:76px; text-transform:uppercase;  }
+#btLogin,#login{ background-image:url(../Images/btnBg.png); background-repeat:no-repeat; border:0; height:28px; width:110px; color:#0060a5; font-weight:bold; cursor:pointer; }
+.clearfix
+{
+    height:24px; line-height:24px;
+}
+.clearfix {display:block;}
+#ietip {
+	border-bottom: #ffd700 1px solid; text-align: center; line-height: 30px; background-color: #fff68f; height: 0px; color: #404040
+}
+#ietip a {
+	color: #69c; text-decoration: none
+}
+#closeietip {
+	position: absolute;  top: 10px; right: 10px
+}
+#closeietip {
+	color: #000 !important
+}

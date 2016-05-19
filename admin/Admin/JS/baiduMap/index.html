@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=826e806b86676d155282de3d37188137"></script>
+    <script type="text/javascript" src="js/cityList.js"></script>
+    <!--<script type="text/javascript" src="js/baiduMap.js"></script>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js百度地图api坐标地址标注功能</title>
+    <style type="text/css">
+        #drag{width:480px;height:340px; position:relative; overflow:hidden; }
+	    #drag .title{position:relative;height:27px;margin:5px 0px;}
+	    #drag .title h2{font-size:14px;height:27px;line-height:24px;border-bottom:1px solid #A1B4B0;}
+	    #f_container{border: 1px solid #999999;position: absolute;top:50px;left: 10px;z-index: 1000;    }
+	    #container{ width:290px;overflow: hidden;height: 24px;background:#F2F3F5;border: 5px solid #F2F3F5; }
+	    #container select{border: 1px solid #ccc;}
+	    .content .btn{width:105px; height: 30px;font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div id="drag">
+        <div class="title">
+            <h2>1.选择位置>2.标注位置>3.保存位置</h2>
+        </div>
+        <div class="content">
+            <div id="f_container">
+                <div id="container"></div>
+            </div>
+            <div id="allmap" style="width: 100%; height: 300px;"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var marker;
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");            // 创建Map实例
+        map.enableScrollWheelZoom(true);
+        map.addControl(new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT }));    // 右下比例尺
+        map.setDefaultCursor("Crosshair");//鼠标样式
+        map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT }));  //右上角，仅包含平移和缩放按钮
+        var cityList = new BMapLib.CityList({
+            container: 'container',
+            map: map
+        });
+        map.addEventListener("click", showInfo);
+        function showInfo(e) {
+            map.clearOverlays();
+            marker = new BMap.Marker(new BMap.Point(e.point.lng, e.point.lat));  // 创建标注
+            map.addOverlay(marker);
+            //获取经纬度
+            setCookie('xy', e.point.lng + ',' + e.point.lat, 30);
+        }
+
+        function setCookie(name, value, expire) {
+            var date = new Date();
+            expire = new Date(date.getTime() + expire * 60000);
+            document.cookie = name + '=' + escape(value) + ';path=/;expires=' + expire.toGMTString() + ';'
+        }
+    </script>
+</body>
+</html>

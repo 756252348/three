@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="userindex.aspx.cs" Inherits="Userlogin_userindex" %>

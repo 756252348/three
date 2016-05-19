@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html,body { width:100%; height:100%; overflow:hidden;}
+table{border-collapse:separate;border-spacing:0;}
+.Header,.CopyRight { background-color: #f9f9f9;height: 76px;width: 100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;font-size:12px;}
+a{ text-decoration:none;}
+.Logo{ float:left; height: 50px;margin:10px 10px 10px 20px; }
+.TopLinks{ float:right; height:76px; line-height:20px; padding-right:10px;}
+.TopLinks a{ color:#333; text-decoration:none; display:block; float:left;}
+.TopLinks b { display:block; float:left; margin:0px 5px; vertical-align:middle; font-weight:normal; }
+.CopyRight{ width:100%; text-align:center; font-family:Arial; height:25px; line-height:25px; }
+.CopyRight a,.CopyRight a:visited{text-decoration:none; color:#4588cc; }
+.TopMenu{ background-color: #313131;clear: both;color: #ffffff;font-size: 12px;height: 34px;line-height: 34px; }
+.TopMenu a{ color:#FFFFFF; text-decoration:none;}
+.TopMenu a:link		{text-decoration:none; color:#FFFFFF;}
+.TopMenu a:visited	{text-decoration:none; color:#FFFFFF;}
+.TopMenu a:hover		{text-decoration:none; color:#FFFFFF;}
+.TopMenu a:active	{text-decoration:none; color:#FFFFFF;}
+.Menu{ float:left;  padding-left:20px;  }
+.Menu a { display:block; float:left; padding:0px; margin:0px; text-indent:0px; }
+.Menu b { font-weight:normal; display:block; float:left; padding:0px; margin:0px; text-indent:0px;  margin:0px 5px;  }
+.Menu ul li { float:left;  width:76px; text-align:center; }
+.Menu ul li.selected a { color:#ffffff; font-weight:bold; }
+.LoginInfo{ float:right; padding-right:10px; }
+.slider { float:right; background-color:#4383BB; text-indent:100px; width:15px; height:100%; cursor:pointer; }
+.LoginInfo span{ color:#ffffff; font-family:Microsoft yahei ,Arial; font-weight:bold; }
+.LeftMenu{ background-color: #F9F9F9;float: left; height: 100%;margin: 0;padding: 0;width: 100%;}
+.LeftMenu a.selected { font-weight:bold; text-decoration:underline; }
+dl.MenuItem{ margin-top:10px; padding:0 10px; cursor:pointer; }
+.MenuItemTitle{background: rgba(0, 0, 0, 0) linear-gradient(#ffffff, #E6E6E6) repeat scroll 0 0;border: 0px solid #6caadb;color: #212121;font-weight: bold;height: 30px;line-height: 30px;}
+.TitleWord{ background-image:url(../Images/Dot03.png); background-repeat:no-repeat; background-position:8px center; padding-left:2em; }
+.SubMenuItem{ padding-left:10px; line-height:25px; }
+div.subMenuList {  width:100%; overflow:hidden;  }
+div.subMenuList ul { margin-top:1px;padding:0 15px;line-height:25px; }
+.ListItem{ background-image:url(../Images/Dot04.png); line-height:24px; background-repeat:no-repeat; background-position:5px 5px; text-indent:15px;}
+.ListItem a {color: #212121;text-decoration: none;}
+.ListItem a:hover {color:#fc4831;text-decoration: none;}
+.Top { height:76px; width:100%;  }
+.Content{ min-width:1130px;}
+.RightMain{ float:right;width:1130px; background-image:url(../Images/MainRightB.png);-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;border-radius:5px; margin-right:10px; padding:5px;}
+.RightMain .RightMainInner{background-image:url(../Images/MainRightInner.png);-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;border-radius:5px; padding:10px 15px 10px 15px; height:450px;}
+#flex { width:11px; vertical-align:middle; }
+#FlexButton { width:11px; height:76px; cursor:pointer; }
+#loading {  width:100%; height:100%; display:none;  margin-top:20%; text-align:center;   }
+#loading p { line-height:28px; font-family:Microsoft yahei; font-size:14px; }
+div.subMenu { width:100%; overflow:auto; overflow-x:hidden; display:none; }
+/*
+    滤镜透明
+    background:#000;  
+   
+    -webkit-opacity: 0.5;   * older safari/Chrome browsers * 
+    
+    -moz-opacity: 0.5;  * Netscape and Older than Firefox 0.9 *
+    
+    -khtml-opacity: 0.5;  * Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器* 
+   
+    opacity: .5;   * IE9 + etc...modern browsers * 
+    
+    filter:alpha(opacity=50);  * IE 4-9 *
+    
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  *This works in IE 8 & 9 too*
+    
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);     *IE4-IE9*
+
+    If you want opacity to also work in IE8′s emulating IE7 mode, the order should be:
+    -ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=50)”; // first
+    filter: alpha(opacity=50); // second
+*/

@@ -1,0 +1,48 @@
+/* CSS Document */
+body{background:#F5F5F5;}
+.container{width:100%; max-width:960px; min-width:320px;}
+.udd-header{height:50px;z-index: 1000;position:relative;width: 100%; margin-top:15px;border-bottom:1px solid #e7e5e5;}
+.udd-header .addfriend{position:absolute; left:0; top:0;  padding: 5px;}
+
+.udd-header .nav{padding:0;}
+.udd-header .nav-tool {
+	top:0;
+	right:0;
+	position:absolute;
+}
+.udd-header .nav-inline>li{
+	display:inline-block;
+	background:#fff;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+.udd-header .nav-inline>li>a {
+	color:#A8A8A8;
+	padding: 10px;
+	border-radius: 0;
+	display:block;
+	font-size:24px;
+}
+.udd-header .nav-inline>li>a.active {
+	color: #FF9D61;
+}
+.udd-body{margin:10px 0; }
+.udd-body .udd-adblock{margin:10px 0;}
+
+.logo{ margin:0 auto;display:block; background-size:100%;;
+	-moz-opacity:0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;}
+	
+.level_icon{ position:relative; display:inline-block; height:11px;min-width: 40px;  margin-right:10px;}
+.level_icon .left{ position:absolute;left:0;top:0; width:17px; height:11px;background:url(../images/level_left.png) no-repeat left;}
+.level_icon .right{ position:absolute;right:0;top:0;width:3px; height:11px;background:url(../images/level_right.png) no-repeat right;}
+.level_icon span{position:absolute; left:17px; top:0; font-size:10px !important; line-height:11px; height:11px; min-width:20px; text-align:center; color:#F30;background:url(../images/level_mid.png) repeat-x;}
+.icons{display:inline-block;}
+.icons img{margin:0 2px;}
+
+.mycard{border:0; color:#333333;text-align:center;}
+.mycard p{margin-bottom:5px;}
+.qrcode{min-height:100px; padding:20px; position:relative; }
+.qrcode .qrimg{width:90%;}
+.qrcode .qrlogo{position:absolute; width:16%; left:42%; top:42%; }

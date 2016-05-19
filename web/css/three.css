@@ -1,0 +1,161 @@
+﻿body{
+    margin:0;
+    width:100%;
+    height:auto;
+}
+.layout{
+    width:100%;
+    height:auto;
+    background:url("../images/three_10.png") no-repeat;
+    background-size:100%;
+    overflow:hidden;
+}
+.top{
+    width:50%;
+    height:auto;
+    margin:20px auto;
+}
+.top > img{
+    width:100%;
+    height:auto;
+}
+.scroll{
+    width:100%;
+    height:41px;
+    background-color:#fff;
+    font-size:0.8em;
+    overflow:hidden;
+    position:relative;
+}
+.scroll > ul{
+            list-style-type:none;
+            width:400%;
+            height:auto;
+            margin:0;
+            padding:0;
+            position:relative;
+            overflow:hidden;
+        }
+        .scroll > ul > li{
+            width:23%;
+            height:auto;
+            padding:12px 1%;
+            float:left;
+        }
+.status{
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    padding:7px 0;
+    margin-top:10px;
+    border-bottom:1px dotted #dcdcdc;
+}
+.status-content{
+    width:100%;
+    height:auto;
+    font-size:0.8em;
+}
+.status-content > ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.status-content > ul > li{
+    width:20%;
+    height:auto;
+    background:url("../images/three_11.png") no-repeat;
+    background-position:right center;
+    text-align:center;
+    float:left;
+}
+.status-content > ul > li:last-of-type{
+    background:none;
+}
+.status-content > ul > li > span{
+    color:red;
+}
+.main{
+    width:100%;
+    height:auto;
+    font-size:0.8em;
+    padding-bottom:75px;
+}
+.main > ul{
+    width:100%;
+    height:auto;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#fff;
+}
+.main > ul > li{
+   width:100%;
+   height:auto;
+   border-bottom:1px solid #dcdcdc;
+   overflow:hidden;
+}
+.main > ul > li > div {
+    margin:9px 15px;
+     background:url("../images/three_02.png") no-repeat;
+    background-position:right center;
+    background-size:12px 25px;
+    overflow:hidden;
+}
+
+.main > ul > li > div > img{
+    display:block;
+    width:21px;
+    height:21px;
+    float:left;
+}
+.main > ul > li > div > a{
+    float:left;
+    padding:2px 0 0 2%;
+}
+.main > ul > li > div > span{
+    float:right;
+    padding:2px 20px 0 0;
+    color:#19c5ff;
+    font-weight:bold;
+}
+.bottom{
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    padding:7px 0;
+    border-bottom:1px dotted #dcdcdc;
+    position:fixed;
+    bottom:0
+}
+.bottom-content{
+    width:100%;
+    height:auto;
+    font-size:0.8em;
+}
+.bottom-content > ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.bottom-content > ul > li{
+    width:33.3%;
+    height:auto;
+    background:url("../images/three_11.png") no-repeat;
+    background-position:right center;
+    text-align:center;
+    float:left;
+}
+.bottom-content > ul > li:last-of-type{
+    background:none;
+}
+.bottom-content > ul > li > img{
+    width:30%;
+    color:#dcdcdc;
+}

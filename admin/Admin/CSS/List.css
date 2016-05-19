@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html{ width:100%; height:100%; background:transparent;}
+body{ font-size:12px; background:transparent; margin-left:0px; margin-right:11px; }
+.Option td{ padding:3px 5px; height:35px; }
+.Option td img{ margin:0 5px;vertical-align:bottom;}
+.ListTable { border:1px #adcadd solid; width:100%; }
+.ListTable th{ border:1px #adcadd solid; font-weight:normal; line-height:24px; height:24px; text-indent:1em; background-color:#f9f9f9; background-repeat:repeat-x;}
+.ListTable tr{ border:1px #e0eef6 solid;}
+.ListTable td{ line-height:30px; height:30px; text-indent:1em; border:none; white-space:nowrap; }
+.CKList{width:44px; cursor:pointer;}
+.ListTable tr.LineOne{background-color:#fff;  }
+.ListTable tr.Linetwo{ background-color:#f5fafc; }
+td.none { display:none; }
+td, th { font-weight:normal; }
+
+#statistics { width:34%; float:left; line-height:24px; }
+#statistics b { color:red; font-family:Verdana; padding:0px 5px; }
+#paging { margin-top:5px;   text-align:right; height:24px; line-height:24px; margin-bottom:5px; float:right; width:65%; }
+#paging span { padding:0px 5px; }
+#paging span,#paging strong,#paging a  { font-family:Arial;  }
+#paging strong { background-color:#EDF7FF; font-weight:bold; }
+#paging strong,#paging a { margin:0 5px; padding:4px 5px; text-align:center; border:1px solid #ADCADD; }
+#paging a:hover{ background-color:#F5FAFC; color:#000;  }
+
+
+#btnSearch { vertical-align:middle; }
+.ListTable h3 { text-align:center; font-family:Microsoft yahei; color:Red;  }
+#llCondition { float:left; }
+#llCondition li { float:left; }
+#llCondition li { padding:0px 5px; line-height:35px;  }
+#llCondition a { padding:0px 5px; }
+.searchBox { float:right; line-height:35px;}
+.postionTitle { float:left; width:200px; }
+.toolTotle { float:right; text-align:right; padding-right:10px; }
+.shade { font-size:100%; /*border-left:1px solid #B7B7B7; border-top:1px solid #B7B7B7;*/width:150px; height:20px; position:absolute; top:0px; left:0px; z-index:9999; background-color:#F3F3F3; }
+#goPage { width:32px; height:22px; line-height:22px; border:1px solid #efefef; font-family:Verdana; text-align:center; margin:0 3px; }
